@@ -8,15 +8,15 @@ default: &default
   adapter: postgresql
   pool: 5
   timeout: 5000
-  username: root
-  password: t0ps3cr3t
+  # username: root
+  # password: t0ps3cr3t
 
 development:
   adapter: postgresql
   database: ticketee_development
   pool: 5
-  username: root
-  password: t0ps3cr3t
+  # username: root
+  # password: t0ps3cr3t
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
@@ -24,11 +24,11 @@ development:
 test:
   <<: *default
   database: ticketee_test
-  username: root
-  password: t0ps3cr3t
+  # username: root
+  # password: t0ps3cr3t
 
 production:
   <<: *default
   database: ticketee_production
-  username: root
-  password: t0ps3cr3t
+  # username: root
+  # password: t0ps3cr3t
